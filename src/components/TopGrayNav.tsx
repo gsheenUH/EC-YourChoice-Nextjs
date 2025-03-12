@@ -1,6 +1,6 @@
 'use client';
 
-import { Navbar, Container, Nav, Image } from 'react-bootstrap';
+import { Navbar, Container, Nav, Image, Col } from 'react-bootstrap';
 import { GlobeAmericas } from 'react-bootstrap-icons';
 
 const TopGrayNav = () => (
@@ -8,20 +8,20 @@ const TopGrayNav = () => (
     <Container className="d-flex justify-content-between align-items-center">
 
       <Nav>
-        <div className="d-flex align-items-left pt-3 me-2">
+        <Col className="d-flex align-items-left pt-3 me-2">
           <Image
             src="/images/logitech.png"
             width={50}
             height={15}
             alt="Logitech logo"
           />
-        </div>
+        </Col>
         <Nav.Item>
           <Nav.Link as="span" className="text-muted me-2">
             |
           </Nav.Link>
         </Nav.Item>
-        <div className="d-flex align-items-left pt-3 me-2">
+        <Col className="d-flex align-items-left pt-3 me-2">
           <Image
             src="/images/logitech.png"
             width={50}
@@ -35,7 +35,7 @@ const TopGrayNav = () => (
             alt="Logitech small icon"
             className="ms-2"
           />
-        </div>
+        </Col>
         <Nav.Item>
           <Nav.Link as="span" className="text-muted">
             |
